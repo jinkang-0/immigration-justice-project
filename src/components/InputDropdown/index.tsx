@@ -139,9 +139,9 @@ export default function InputDropdown({
         hideSelectedOptions={false}
         defaultValue={defaultDropdownVal}
         noOptionsMessage={NoOptionsMessage}
-        unstyled
         required={required}
         isDisabled={disabled}
+        unstyled
         styles={DropdownStyles(multi, error !== '')}
         instanceId={useId()}
         options={optionsArray}

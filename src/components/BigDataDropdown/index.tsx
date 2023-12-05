@@ -148,21 +148,20 @@ export default function BigDataDropdown({
         components={{ Menu: AnimatedMenu }}
         isClearable
         closeMenuOnSelect={false}
-        hideSelectedOptions={false}
         tabSelectsValue={false}
-        instanceId={useId()}
+        hideSelectedOptions={false}
         defaultValue={defaultDropdownVal}
-        options={optionsArray}
-        isMulti={multi}
-        onChange={handleChange}
-        placeholder={placeholder}
         noOptionsMessage={NoOptionsMessage}
+        required={required}
+        isDisabled={disabled}
         unstyled
         styles={DropdownStyles(multi, error !== '')}
-        isDisabled={disabled}
-        required={required}
-        loadOptions={loadOptions}
+        instanceId={useId()}
+        placeholder={placeholder}
+        isMulti={multi}
+        onChange={handleChange}
         onInputChange={handleInputChange}
+        loadOptions={loadOptions}
       />
       {error && <ErrorText>{error}</ErrorText>}
     </DropdownWrapper>
